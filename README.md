@@ -1,2 +1,2 @@
 # Alan Mathew's Personal Website
-This is a personal website built using the Hack4Impact Starter Pac
+This is a personal website built using the Hack4Impact Starter Pack
