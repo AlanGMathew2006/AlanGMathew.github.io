@@ -25,6 +25,7 @@ header {
   box-sizing: border-box;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  z-index: 1000;
 }
 
 .logo {
@@ -47,6 +48,7 @@ nav a:hover {
   color: #4bb7a0;
 }
 
+/* Home Page Styles */
 .about-content {
   display: flex;
   z-index: 2;
@@ -125,6 +127,75 @@ nav a:hover {
   background: linear-gradient(white, white) padding-box,
     linear-gradient(90deg, #4bb7a0 0%, #8414b1 100%) border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content .right img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/*Portfolio Section Styles*/
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 40px;
+  box-sizing: border-box;
+}
+
+.portfolio-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4bb7a0 0%, #8414b1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.project-images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-images-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #4bb7a0 0%, #8414b1 100%) border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-images-grid img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.project-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4bb7a0 0%, #8414b1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
 }
 
 /* Footer Styles */
