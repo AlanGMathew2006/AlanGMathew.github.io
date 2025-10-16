@@ -305,10 +305,13 @@ nav a:hover {
 }
 
 .blog-container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 /* Individual Blog Post Styling */
@@ -316,11 +319,14 @@ nav a:hover {
   background: white;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .blog-post:hover {
@@ -355,13 +361,12 @@ nav a:hover {
 
 .blog-post img {
   width: 100%;
-  max-width: 660px;
-  height: 350px;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  margin: 15px 0;
+  margin: 15px 0 10px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -416,8 +421,22 @@ nav a:hover {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile responsiveness for blog images */
+/* Mobile and tablet responsiveness */
+@media (max-width: 1024px) {
+  .blog-container {
+    max-width: 900px;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
   .blog-article {
     padding: 20px;
   }
@@ -430,13 +449,32 @@ nav a:hover {
   }
 
   .blog-post {
+    padding: 18px;
+    margin-bottom: 0;
+  }
+
+  .blog-post img {
+    height: 180px;
+    margin: 12px 0 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .blog-post {
     padding: 15px;
-    margin-bottom: 15px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5rem;
   }
 
   .blog-post img {
     height: 160px;
-    margin: 12px 0;
   }
 }
 
