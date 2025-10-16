@@ -14,7 +14,7 @@ const blogs: Blog[] = [
     date: "Summer 2025",
     description:
       "Self learned Web Developer, building a scheduling app for a small tech consulting business.",
-    image: "images/blog/blog-brilliant-consulting.png",
+    image: "../images/blogs/blog-brilliant-consulting.png",
     imageAlt: "Web development project",
     slug: "creating-brilliant-consulting",
   },
@@ -23,7 +23,7 @@ const blogs: Blog[] = [
     date: "Fall 2025",
     description:
       "First year CS student at Cal Poly SLO, joining Hack For Impact to make a difference.",
-    image: "images/blog/hack-for-impact.png",
+    image: "../images/blogs/blog-hack-for-impact.png",
     imageAlt: "Hack For Impact event",
     slug: "joining-hack-for-impact",
   },
