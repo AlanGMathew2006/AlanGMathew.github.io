@@ -27,6 +27,15 @@ const blogs: Blog[] = [
     imageAlt: "Hack For Impact event",
     slug: "joining-hack-for-impact",
   },
+  {
+    title: "First Year at Cal Poly SLO",
+    date: "Fall 2025",
+    description:
+      "My journey as a Computer Science student at California Polytechnic State University, San Luis Obispo.",
+    image: "../images/blogs/blog-first-year-calpoly.png",
+    imageAlt: "Cal Poly Mustangs logo",
+    slug: "my-first-year-at-cal-poly-slo",
+  },
 ];
 
 const blogContainer = document.getElementById("blog-container");
